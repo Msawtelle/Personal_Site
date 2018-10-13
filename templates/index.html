@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Mitchell Sawtelle Personal Site</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="../static/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="../static/css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+  <link rel="stylesheet" href="../static/css/style.css">
+  <link rel="stylesheet" href="../static/css/animate.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+    <a class="navbar-brand" href="www.mitchellsawtelle.site">Mitchell Sawtelle</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Links and Projects</a>
+          <div class="dropdown-menu" aria-labelledby="dropdown01">
+            <a class="dropdown-item" href="#">Github & Resume</a>
+            <a class="dropdown-item" href="#">Personal Projects</a>
+            <a class="dropdown-item" href="#">Research Projects</a>
+            <a class="dropdown-item" href="gallery.html">Personal Photo Gallery</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <main role="main">
+    <div class="jumbotron">
+      <div class="container">
+        <img class="wow fadeInUp rounded mx-auto d-block"src="../static/img/profile_pic/profile_pic.gif" alt="profile_pic" width="250" height="250">
+        <hr>
+        <p class='text-center'><strong>Soon to be Graduate from Oklahoma State University, May 2019</strong></p>
+        <p class="text-center">Bachelor of Science in Civil Engineering: Environmental Engineering Focus</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <!-- Example row of columns -->
+      <div class="row">
+        <div class="col-md-4">
+          <h2>About Me</h2>
+          <hr>
+          <h6><strong>Top 5 Favorite Things:</strong></h6>
+          <ul class="list-unstyled">
+            <li>Geospatial Python</li>
+            <li>DOTA 2</li>
+            <li>Disc Golf</li>
+            <li>Seinfeld</li>
+            <li>Tacos</li>
+          </ul>
+          <hr>
+          <h6><strong>Top 5 Least Favorite Things:</strong></h6>
+          <ul class="list-unstyled">
+            <li>Mark Wahlberg Movies</li>
+            <li>Pennies</li>
+            <li>Mumble Rap</li>
+            <li>Textbook Costs</li>
+            <li>Wet Socks</li>
+          </ul>
+          <hr>
+          <h6><strong>Favorite Books</strong></h6>
+          <ul class="list-unstyled">
+            <li><u>Infinite Jest</u>, David Foster Wallace</li>
+            <li><u>Slapstick</u>, Kurt Vonnegut</li>
+            <li><u>A Moveable Feast</u>, Ernest Hemingway</li>
+            <li><u>The Wind-Up Bird Chronicle</u>, Haruki Murakami</li>
+            <li></li>
+          </ul>
+          <hr>
+          <h6><strong>Views on Hip-Hop Music:</strong></h6>
+          <ul class="list-unstyled">
+            <li>East Coast Lyrically<br>West Coast Spiritually</li>
+          </ul>
+          <hr>
+        </div>
+        <div class="col-md-4">
+          <h2>Projects</h2>
+          <hr>
+          <p><strong>Personal</strong></p>
+          <dl class="list-unstyled">
+            <dt><a href="https://github.com/Msawtelle/GroupMe-Community-Mentor-Chat-Bot">GroupMe Community Mentor Chat Bot</a></dt>
+            <dd>As a Community Mentor (think RA) at Oklahoma State I am really passionate about getting my residents involved around campus. I also enjoy automating things with Python.
+                Two of the goals I had in mind when I started this project were to tell residents about upcoming events, and distribute phone numbers for campus resources. This bot makes use of
+                the Google Sheets api, Heroku hosting, and flask.
+            </dd><hr>
+            <dt> <a href="dota2.html">DOTA 2 Visualizations from The International 8</a></dt>
+            <dd>DOTA 2 is one of my favorite pass times not only because it is super fun, but also because it has a great amount
+                of statistical depth. If you don't know anything about DOTA 2 this page seeks to explain some of the intricacy of the game by examing
+                the underdog run of OG through this past year's world championship The International 8.
+            </dd><hr>
+          </dl>
+          <p><strong>Research</strong></p>
+          <dl class="list-unstyled">
+            <dt><a href="algae.html">Development of Algae and Turbidity Indices Using LANDSAT Scenes</a></dt>
+            <dd>Due to increased fertilizer usage in recent years, the issue of <a href="https://oceanservice.noaa.gov/hazards/hab/">harmful algal blooms </a>has become
+                increasingly more important for states with large agricultural sectors. Typically the concentration of these harmful
+                algal blooms are assesed by sending a boat out and placing a sensor into the lake at various points. Using machine learning techniques on 3 years of in-situ and LANDSAT data, this research seeks to develop remotely sensed indices for the presence of algae and turbidity in <a href="https://www.grandlake.com/information">Grand Lake O' the Cherokees</a>.</dd><hr>
+            <dt><a href="https://github.com/EnvironmentalSoftware/PyHSPF">Updating PyHSPF</a></dt>
+            <dd>The PyHSPF module principally developed by Dr. David Lampert seeks to automate the data acquisition, and formatting of fortran input files for the HSPF model (Hydrologic Simulation Program Fortran). The data needed for the HSPF model comes from various sources around the web including NWIS, USGS, and the EPA. These sources constantly change the way their data is hosted. I have worked on standardizing the data acquisitions from these various sources.</dd><hr>
+            <dt><a href="#">Web Scraper for the National Inventory of Dams</a></dt>
+            <dd>The Army Core of Engineers hosts the <a href="http://nid.usace.army.mil/cm_apex/f?p=838:12">National Inventory of Dams</a>. This database holds lots of pertinent information about dams and reservoirs in the United States. The problem with their website is that the data has no api accespoints, or downloadable data. They only present the NID database in a javascript generated table. I wrote a Selenium test to scrape the NID website for all 90,000+ rows. You can view the data as .csv by state <a href="#">here</a> . All credit to the Army Core of Engineers for the data.</dd><hr>
+          </dl>
+        </div>
+        <div class="col-md-4">
+          <h2>Github & Resume</h2>
+          <hr>
+          <p><a class="btn btn-secondary" href="#" role="button">Go to Github &raquo;</a></p>
+          <p><a class="btn btn-secondary" href="#" role="button">View Resume &raquo;</a></p>
+        </div>
+      </div>
+      <hr>
+
+    </div> <!-- /container -->
+
+  </main>
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5><strong>Contact Me</strong></h5>
+          <ul class="list-unstyled">
+            <li>sawtelle.mitchell@gmail.com</li>
+            <li>mitchell.sawtelle@okstate.edu</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script>window.jQuery || document.write('<script src="../../../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+  <script src="../../../../assets/js/vendor/popper.min.js"></script>
+  <script src="../../../../dist/js/bootstrap-material-design.min.js"></script>
+  <!-- JQuery -->
+  <!-- SCRIPTS -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script>
+  <script>new WOW().init();</script>
+</body>
+
+</html>

@@ -1,0 +1,8 @@
+.jumbotron{
+ background-image: url(‘../img/background.png’);
+ background-size: cover;
+ background-repeat: no-repeat;
+}
+.btn,.btn-secondary,.btn-primary, .btn-primary:hover, .btn-primary:active, .btn-primary:visited {
+    background-color: #90b4ed !important;
+}
