@@ -29,11 +29,10 @@
           <a class="nav-link" href="www.mitchellsawtelle.site">Home<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Links and Projects</a>
+          <a class="nav-link dropdown-toggle" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Projects</a>
           <div class="dropdown-menu" aria-labelledby="dropdown01">
-            <a class="dropdown-item" href="#">Personal Projects</a>
-            <a class="dropdown-item" href="#">Research Projects</a>
-            <a class="dropdown-item" href="gallery.html">Personal Photo Gallery</a>
+            <a class="dropdown-item" href="#personal">Personal Projects</a>
+            <a class="dropdown-item" href="#research">Research Projects</a>
           </div>
         </li>
       </ul>
@@ -52,7 +51,7 @@
     <div class="container">
       <!-- Example row of columns -->
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-3">
           <h2>About Me</h2>
           <hr>
           <h6><strong>Top 5 Favorite Things:</strong></h6>
@@ -88,8 +87,8 @@
           </ul>
           <hr>
         </div>
-        <div class="col-md-4">
-          <h2>Projects</h2>
+        <div class="col-md-6">
+          <h2 id="personal">Projects</h2>
           <hr>
           <p><strong>Personal</strong></p>
           <dl class="list-unstyled">
@@ -103,6 +102,8 @@
                 of statistical depth. If you don't know anything about DOTA 2 this page seeks to explain some of the intricacy of the game by examing
                 the underdog run of OG through this past year's world championship The International 8.
             </dd><hr>
+            <dt><a href="gallery.html">Photo Gallery</a></dt>
+            <dd>Photography is incredibly relaxing for me. It lets me just zone out and look at things from crazy perspectives. Take a look at some pictures I've taken.</dd><hr id="research">
           </dl>
           <p><strong>Research</strong></p>
           <dl class="list-unstyled">
@@ -116,7 +117,7 @@
             <dd>The Army Core of Engineers hosts the <a href="http://nid.usace.army.mil/cm_apex/f?p=838:12">National Inventory of Dams</a>. This database holds lots of pertinent information about dams and reservoirs in the United States. The problem with their website is that the data has no api accespoints, or downloadable data. They only present the NID database in a javascript generated table. I wrote a Selenium test to scrape the NID website for all 90,000+ rows. You can view the data as .csv by state <a href="#">here</a> . All credit to the Army Core of Engineers for the data.</dd><hr>
           </dl>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-3">
           <h2>Professional Links</h2>
           <hr>
           <div class="col-md-12">
@@ -165,8 +166,12 @@
   <script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
   <script type="text/javascript" src="../static/js/mdb.min.js"></script>
-  <script type="text/javascript" src="../static/js/wow.min.js"></script>
+  <script type="text/javascript" src="../static/js/modules/wow.js"></script>
   <script>new WOW().init();</script>
+  <script type="text/javascript" src="../static/js/smooth_scroll.js"></script>
+  <script type="text/javascript">document.querySelector('.hello').scrollIntoView({
+  behavior: 'smooth'
+});</script>
 </body>
 
 </html>
